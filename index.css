@@ -1,0 +1,272 @@
+/* home page css */
+body {
+    background-color: rgb(201, 231, 208);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 5vh 5vh;
+    height: 90vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    /* border: 1px solid rgb(229, 229, 229); */
+    font-family: 'Akatab';
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: rgb(70, 150, 87);
+}
+
+ul {
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0px 0px;
+}
+
+button {
+    border: none;
+    list-style: none;
+    background-color: rgb(70, 150, 87);
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Akatab';
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+div.socials {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    margin-top: 50px;
+    bottom: 10vh;
+}
+
+div.socials a {
+    margin-right: 40px;
+    transition: all ease-in 0.1s;
+}
+
+div.socials a:last-child {
+    margin-right: 0px;
+}
+
+.fa.fa-linkedin {
+    font-size: 25px;
+}
+
+.fa.fa-github {
+    font-size: 25px;
+}
+
+.fa.fa-envelope {
+    font-size: 25px;
+}
+
+.fa.fa-file-text {
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+    transition: all ease-in 0.1s;
+}
+
+a:hover, a:active {
+    color: rgb(70, 150, 87);
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+div#logo-div {
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+    transform: translate(-50%, -50%);
+}
+
+img#logo {
+    height: 60px;
+    animation-name: flower-rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flower-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fa.fa-arrow-left {
+    font-size: 25px;
+}
+
+/* about page css */
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#about-me p {
+    text-align: left;
+    font-size: 20px;
+    width: 50vw;
+}
+
+#about-me p:first-child {
+    text-align: left;
+    font-size: 30px;
+    color: rgb(70, 150, 87);
+    width: 50vw;
+}
+
+#me {
+    height: 350px;
+    transition: all ease-in 0.2s;
+}
+
+#me:hover {
+    transform: scale(1.05);
+}
+
+/* experience page css */
+#experience {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+#experience p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* font-weight: bold; */
+}
+
+#experience p:last-child {
+    margin-bottom: 60px;
+}
+
+#experience span {
+    color: rgb(70, 150, 87);
+    font-size: 17px;
+}
+
+#experience span:nth-of-type(2) {
+    color: rgb(168, 168, 168);
+    font-size: 15px;
+}
+
+hr {
+    border: 0.2px solid lightgray;
+}
+
+/* skills page css */
+#skills {
+    width: 900px;
+    column-count: 2;
+    column-gap: 5rem;
+    column-width: 100px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+div.col:nth-of-type(1){
+    margin-top: -25px;
+}
+
+div.col {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.label {
+    font-size: 25px;
+    color: rgb(70, 150, 87);
+}
+
+/* projects page css */
+#projects p {
+    font-size: 20px;
+}
+
+#projects p:hover {
+    transform: scale(1.05);
+    transition: all ease-in 0.1s;
+}
+
+#proj {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+img#proj-img {
+    height: 250px;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit: fill;
+    transition: all ease-in 0.1s;
+}
+
+img#proj-img:hover {
+    transform: scale(1.03);
+}
+
+#proj p{
+    font-size: 16px;
+    width: 900px;
+}
+
+#proj p:first-of-type {
+    font-size: 18px;
+}
+
+#skills-p {
+    color: rgb(70, 150, 87);
+}

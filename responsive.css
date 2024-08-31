@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* home page css */
+    .container {
+            margin: 2vh 2vh;
+            height: 96vh;
+    }
+    
+    h1 {
+        font-size: 2em;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        width: 300px;
+    }
+
+    ul {
+        display: block;
+        margin-top: 2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+
+    ul:nth-last-child() {
+        margin-bottom: 0px;
+    }
+
+    div.socials {
+        width: 300px;
+        bottom: 5vh;
+    }
+
+    div.socials a {
+        margin-right: 1.5em;
+    }
+
+    .fa.fa-linkedin {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-github {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-envelope {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-file-text {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-arrow-left {
+        font-size: 1.2em;
+    }
+
+    /* about page css */
+    #about-me {
+        display: block;
+    }
+
+    #about-me p, #about-me p:first-child {
+        text-align: justify;
+        width: 250px;
+    }
+
+    #about-me p {
+        font-size: 0.8em;
+    }
+
+    #about-me p:first-child {
+        font-size: 1em;
+    }
+
+    #me {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* experience page css */
+    #experience p {
+        font-size: 1em;
+        width: 250px;
+    }
+
+    #experience span {
+        font-size: 0.99em;
+    }
+
+    #experience span:nth-of-type(2) {
+        font-size: 0.89em;
+    }
+
+    /* skills page css */
+    #skills {
+        width: 280px;
+        display: block;
+        column-count: 1;
+    }
+
+    div.col {
+        margin-bottom: 30px;
+    }
+
+    .col p {
+        font-size: 0.8em;
+    }
+
+    p.label {
+        font-size: 1em;
+    }
+
+    /* projects page css */
+    #projects p {
+        font-size: 1em;
+    }
+
+    /* individual project page css */
+    #proj p {
+        font-size: 0.8em;
+        width: 280px;
+        text-align: justify;
+    }
+
+    #proj p:first-of-type {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    p#skills-p {
+        text-align: center;
+    }
+
+    img#proj-img {
+        width: 280px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 1040px) {
+    /* home page css */
+    h1 {
+        font-size: 45px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .fa.fa-linkedin {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-github {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-envelope {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-file-text {
+        font-size: 1.2em;
+    }
+
+    .fa.fa-arrow-left {
+        font-size: 1.2em;
+    }
+
+    /* about page css */
+    #about-me {
+        gap: 20px;
+    }
+
+    #about-me p,
+    #about-me p:first-child {
+        width: 280px;
+    }
+
+    #about-me p {
+        font-size: 0.8em;
+    }
+
+    #about-me p:first-child {
+        font-size: 1em;
+    }
+
+    #me {
+        width: 180px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    /* experience page css */
+    #experience p {
+        font-size: 1em;
+        width: 250px;
+    }
+
+    #experience span {
+        font-size: 0.99em;
+    }
+
+    #experience span:nth-of-type(2) {
+        font-size: 0.89em;
+    }
+
+    /* skills page css */
+    #skills {
+        width: 280px;
+        display: block;
+        column-count: 1;
+    }
+
+    div.col {
+        margin-bottom: 30px;
+    }
+
+    .col p {
+        font-size: 0.8em;
+    }
+
+    p.label {
+        font-size: 1em;
+    }
+
+    /* projects page css */
+    #projects p {
+        font-size: 1em;
+    }
+
+    /* individual project page css */
+    #proj p {
+        font-size: 0.8em;
+        width: 280px;
+        text-align: justify;
+    }
+
+    #proj p:first-of-type {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    p#skills-p {
+        text-align: center;
+    }
+
+    img#proj-img {
+        width: 280px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
